@@ -32,7 +32,6 @@ body {
 .text-wrapper .text {
     color: #727272;
     font-size: 13px;
-    font-weight: 500;
     margin-bottom: 18px;
 }
 
@@ -54,4 +53,28 @@ body {
 .image-wrapper img {
     width: 100%;
     height: auto;
+}
+
+@media (min-width: 768px) {
+    body {
+        padding: 24px;
+    }
+
+    .text-wrapper {
+        padding-bottom: 24px;
+    }
+
+    .text-wrapper .title {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+
+    .text-wrapper .text {
+        font-size: 15px;
+        margin-bottom: 24px;
+    }
+
+    .text-wrapper .popup-button {
+        max-width: 260px;
+    }
 }
