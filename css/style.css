@@ -1,3 +1,5 @@
+@import url('popup.css');
+
 @font-face {
     font-family: Manrope;
     src: url('../fonts/Manrope/Manrope-VariableFont_wght.ttf');
@@ -44,6 +46,7 @@ body {
     background-repeat: no-repeat;
     background-position: calc(100% - 10px) center;
     border-radius: 60px;
+    cursor: pointer;
     color: #fff;
     font-size: 15px;
     font-weight: 500;
@@ -51,6 +54,10 @@ body {
     padding: 16px 18px;
     height: 56px;
     width: 100%;
+}
+
+.text-wrapper .popup-button:hover {
+    background-color: #2e61c1;
 }
 
 .image-wrapper img {

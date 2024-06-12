@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Демо-версия</title>
         <link rel="stylesheet" href="css/style.css" />
-        <script src="js/script.js"></script>
+        <script defer src="js/script.js"></script>
     </head>
     <body>
         <div class="content-wrapper">
@@ -39,6 +39,52 @@
                     />
                     <img src="images/image_XS.png" alt="Mobile image" />
                 </picture>
+            </div>
+        </div>
+        <div class="popup">
+            <div class="close-popup layer"></div>
+            <div class="popup-content">
+                <button class="close-popup button" type="button">Close</button>
+                <div class="popup-header">
+                    <h2 class="popup-title">Войти в систему</h2>
+                </div>
+                <div class="popup-body">
+                    <div class="popup-input text">
+                        <input
+                            type="text"
+                            name="email-phone"
+                            placeholder="Email/Телефон"
+                        />
+                    </div>
+                    <div class="popup-input password">
+                        <input
+                            type="password"
+                            name="password"
+                            placeholder="Пароль"
+                        />
+                    </div>
+                    <div class="popup-input checkbox">
+                        <label>
+                            <input type="checkbox" name="remember-password" />
+                            Запомнить пароль
+                        </label>
+                    </div>
+                    <div class="popup-link">
+                        <a href="#" title="Восстановить">Восстановить</a>
+                    </div>
+                </div>
+                <div class="popup-footer">
+                    <div class="popup-button">
+                        <button type="button" class="button primary">
+                            Войти
+                        </button>
+                    </div>
+                    <div class="popup-button">
+                        <button type="button" class="button secondary">
+                            Зарегистрироваться
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
