@@ -45,6 +45,7 @@ body {
     color: #fff;
     font-size: 15px;
     font-weight: 500;
+    text-align: left;
     padding: 16px 18px;
     height: 56px;
     width: 100%;
@@ -76,5 +77,43 @@ body {
 
     .text-wrapper .popup-button {
         max-width: 260px;
+    }
+}
+
+@media (min-width: 1440px) {
+    body {
+        padding: 36px 40px;
+    }
+
+    .content-wrapper {
+        display: flex;
+    }
+
+    .content-wrapper > div {
+        flex: 50% 0 0;
+    }
+
+    .text-wrapper {
+        padding: 100px 97px 100px 72px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .text-wrapper .title {
+        font-size: 26px;
+        margin-bottom: 18px;
+    }
+
+    .text-wrapper .text {
+        font-size: 17px;
+        margin-bottom: 36px;
+    }
+
+    .text-wrapper .popup-button {
+        font-size: 18px;
+        padding: 20px 24px;
+        height: 68px;
+        max-width: 340px;
     }
 }
