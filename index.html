@@ -4,6 +4,40 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Демо-версия</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/script.js"></script>
     </head>
-    <body></body>
+    <body>
+        <div class="content-wrapper">
+            <div class="text-wrapper">
+                <h1 class="title">Демо-версия</h1>
+                <p class="text">
+                    За 18 лет деятельности было реализовано более 500 крупных, а
+                    так же, не менее 2500 средних и малых проектов. Используя
+                    знания и накопленный опыт мы можем предложить
+                </p>
+                <button type="button">Попробовать бесплатно</button>
+            </div>
+            <div class="image-wrapper">
+                <picture>
+                    <source
+                        srcset="images/image_L.png"
+                        media="(min-width: 1920px)"
+                        alt="Ultrawide desktop image"
+                    />
+                    <source
+                        srcset="images/image_M.png"
+                        media="(min-width: 1440px)"
+                        alt="Desktop image"
+                    />
+                    <source
+                        srcset="images/image_S.png"
+                        media="(min-width: 768px)"
+                        alt="Mobile image"
+                    />
+                    <img src="images/image_XS.png" alt="Small mobile image" />
+                </picture>
+            </div>
+        </div>
+    </body>
 </html>
