@@ -16,7 +16,11 @@
                     так же, не менее 2500 средних и малых проектов. Используя
                     знания и накопленный опыт мы можем предложить
                 </p>
-                <button class="popup-button" type="button">
+                <button
+                    class="popup-button"
+                    type="button"
+                    popupContent="login-window"
+                >
                     Попробовать бесплатно
                 </button>
             </div>
@@ -43,48 +47,9 @@
         </div>
         <div class="popup">
             <div class="close-popup layer"></div>
-            <div class="popup-content">
+            <div class="popup-window">
                 <button class="close-popup button" type="button">Close</button>
-                <div class="popup-header">
-                    <h2 class="popup-title">Войти в систему</h2>
-                </div>
-                <div class="popup-body">
-                    <div class="popup-input text">
-                        <input
-                            type="text"
-                            name="email-phone"
-                            placeholder="Email/Телефон"
-                        />
-                    </div>
-                    <div class="popup-input password">
-                        <input
-                            type="password"
-                            name="password"
-                            placeholder="Пароль"
-                        />
-                    </div>
-                    <div class="popup-input checkbox">
-                        <label>
-                            <input type="checkbox" name="remember-password" />
-                            Запомнить пароль
-                        </label>
-                    </div>
-                    <div class="popup-link">
-                        <a href="#" title="Восстановить">Восстановить</a>
-                    </div>
-                </div>
-                <div class="popup-footer">
-                    <div class="popup-button">
-                        <button type="button" class="button primary">
-                            Войти
-                        </button>
-                    </div>
-                    <div class="popup-button">
-                        <button type="button" class="button secondary">
-                            Зарегистрироваться
-                        </button>
-                    </div>
-                </div>
+                <div class="popup-content"></div>
             </div>
         </div>
     </body>

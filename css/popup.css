@@ -18,7 +18,7 @@ body.open-popup .popup {
     display: block;
 }
 
-.popup .popup-content {
+.popup .popup-window {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -32,6 +32,7 @@ body.open-popup .popup {
 }
 
 .popup .close-popup.layer {
+    cursor: pointer;
     position: fixed;
     top: 0;
     right: 0;
@@ -56,6 +57,10 @@ body.open-popup .popup {
     border: none;
     border-radius: 10px;
     font-size: 0;
+}
+
+.popup .close-popup.button:hover {
+    background-color: #e6e6e6;
 }
 
 .popup .popup-header {
@@ -114,6 +119,10 @@ body.open-popup .popup {
     text-decoration: none;
     font-size: 20px;
     line-height: 27px;
+}
+
+.popup .popup-link a:hover {
+    text-decoration: underline;
 }
 
 .popup .popup-footer {
