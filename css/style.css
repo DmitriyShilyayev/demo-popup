@@ -26,12 +26,14 @@ body {
     color: #1f4284;
     font-size: 17px;
     font-weight: 500;
+    line-height: 27px;
     margin-bottom: 14px;
 }
 
 .text-wrapper .text {
     color: #727272;
     font-size: 13px;
+    line-height: 21px;
     margin-bottom: 18px;
 }
 
@@ -67,11 +69,13 @@ body {
 
     .text-wrapper .title {
         font-size: 20px;
+        line-height: 32px;
         margin-bottom: 24px;
     }
 
     .text-wrapper .text {
         font-size: 15px;
+        line-height: 24x;
         margin-bottom: 24px;
     }
 
@@ -102,11 +106,13 @@ body {
 
     .text-wrapper .title {
         font-size: 26px;
+        line-height: 42px;
         margin-bottom: 18px;
     }
 
     .text-wrapper .text {
         font-size: 17px;
+        line-height: 27px;
         margin-bottom: 36px;
     }
 
@@ -115,5 +121,11 @@ body {
         padding: 20px 24px;
         height: 68px;
         max-width: 340px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .text-wrapper .title {
+        font-size: 30px;
     }
 }
