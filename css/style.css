@@ -1,0 +1,57 @@
+@font-face {
+    font-family: Manrope;
+    src: url('../fonts/Manrope/Manrope-VariableFont_wght.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Manrope;
+}
+
+body {
+    padding: 14px 24px;
+}
+
+.content-wrapper {
+    background-color: #f0f4fc;
+}
+
+.text-wrapper {
+    padding: 24px 24px 18px;
+}
+
+.text-wrapper .title {
+    color: #1f4284;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.text-wrapper .text {
+    color: #727272;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.text-wrapper .popup-button {
+    background-color: #244c98;
+    background-image: url('../icons/popup-icon.svg');
+    background-size: 36px 36px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+    border-radius: 60px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 16px 18px;
+    height: 56px;
+    width: 100%;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+}
