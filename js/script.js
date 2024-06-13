@@ -70,18 +70,51 @@ if (openPopupElem) {
     function renderBody(itemsObj) {
         let result = '<div class="popup-body">';
         itemsObj.forEach((item) => {
+            let id = Math.floor(Math.random() * 100);
             switch (item.type) {
+                case 'text':
+                    result += `<div class="popup-text"><p> ${item.text}</p></div>`;
+                    break;
                 case 'text-field':
-                    result += `<div class="popup-input ${item.type}"><input type="text" name="${item.name}" placeholder="${item.placeholder}"/></div>`;
-                    break;
+                case 'email':
+                case 'number':
+                case 'tel':
                 case 'password':
-                    result += `<div class="popup-input ${item.type}"><input type="password" name="${item.name}" placeholder="${item.placeholder}"/></div>`;
+                    result += `<div class="popup-input ${item.type}">`;
+                    if (item.label) {
+                        result += `<label for="${item.name + '_' + id}">${
+                            item.label
+                        }</label>`;
+                    }
+                    result += `<input
+                        id="${item.name + '_' + id}"
+                        type="${
+                            item.type === 'text-field' ? 'text' : item.type
+                        }"
+                        name="${item.name}"
+                        title="${item.title ? item.title : ''}"
+                        value="${item.value ? item.value : ''}"
+                        placeholder="${
+                            item.placeholder ? item.placeholder : ''
+                        }"/>`;
+                    result += `</div>`;
                     break;
+                case 'radio':
                 case 'checkbox':
-                    result += `<div class="popup-input ${item.type}"><label><input type="${item.type}" name="${item.name}"/>${item.label}</label></div>`;
+                    result += `<div class="popup-input ${item.type}">
+                            <label>
+                                <input type="${item.type}" name="${item.name}"/>
+                                ${item.label}
+                            </label>
+                        </div>`;
                     break;
                 case 'link':
-                    result += `<div class="popup-link"><a href="${item.href}" title="${item.title}">${item.text}</a></div>`;
+                    result += `<div class="popup-link">
+                            <a href="${item.href}"
+                                title="${item.title ? item.title : ''}">
+                                ${item.text}
+                            </a>
+                        </div>`;
                     break;
             }
         });

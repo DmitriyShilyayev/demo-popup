@@ -74,6 +74,12 @@ body.open-popup .popup {
     font-weight: 500;
 }
 
+.popup .popup-text p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
 .popup .popup-input {
     margin-bottom: 4px;
 }
